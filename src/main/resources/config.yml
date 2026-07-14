@@ -1,0 +1,43 @@
+# ItemGenerator - Config
+# Her seviye icin: uretim araligi (saniye), max depo, uretim miktari
+
+levels:
+  1:
+    interval-seconds: 5
+    max-storage: 128
+    produce-amount: 1
+  2:
+    interval-seconds: 5
+    max-storage: 256
+    produce-amount: 1
+  3:
+    interval-seconds: 4
+    max-storage: 384
+    produce-amount: 1
+  4:
+    interval-seconds: 4
+    max-storage: 512
+    produce-amount: 2
+  5:
+    interval-seconds: 3
+    max-storage: 626
+    produce-amount: 2
+
+# Varsayilan uretilecek item (generator olusturulurken elde tutulan item baz alinabilir)
+default-material: DIAMOND
+
+# Hologram guncelleme araligi (tick) - 20 tick = 1 saniye
+hologram-update-interval: 20
+
+# Impulso (boost) carpani - uretim hizini X kat artirir
+boost-multiplier: 2.0
+
+messages:
+  prefix: "&8[&6ItemGenerator&8] &r"
+  generator-created: "&aGenerator basariyla olusturuldu! (Seviye {level})"
+  generator-removed: "&cGenerator kaldirildi."
+  chest-full: "&cEnvanterin dolu, tum itemler alinamadi!"
+  storage-collected: "&a{amount}x {item} alindi. Kalan depo: {storage}/{max}"
+  no-permission: "&cBu islemi yapmaya yetkin yok."
+  boost-activated: "&dImpulso aktif edildi! Sure: {duration}"
+  fuel-added: "&6Combustivel eklendi: {amount}"
